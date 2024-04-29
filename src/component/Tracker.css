@@ -1,0 +1,325 @@
+* {
+    font-family: "Rubik", sans-serif;
+}
+
+@media screen and (min-width: 1141px) and (max-width: 3840px) {
+    .trackerContainer {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .headercontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/src/assets/pattern-bg-desktop.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        padding: 32px 320px;
+        gap: 24px;
+
+    }
+
+    /* Title */
+    .title h1 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* Input div */
+
+    .input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+
+    .input label {
+        width: 85%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .btn-header {
+        width: 15%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .btn-header button {
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        border: 1px solid transparent;
+        border-radius: 0 10px 10px 0;
+        background-color: var(--gray-dark);
+    }
+
+    .btn-header button:hover {
+        cursor: pointer;
+        background-color: #373737;
+    }
+
+    .btn-header button img {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .input label input {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        border: 1px solid var(--gray-dark);
+        border-radius: 10px 0 0 10px;
+    }
+
+    #ip::placeholder {
+        font-size: 14px;
+        color: var(--gray);
+    }
+
+    /* Input div */
+
+    /* Absolute div */
+
+
+    .absoluteContainer {
+        position: absolute;
+        top: 170%;
+        background-color: #fff;
+        padding: 36px 0;
+        width: 140%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        z-index: 2;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.251);
+    }
+
+    .ipAddress,
+    .location,
+    .timezone,
+    .isp {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+        gap: 12px;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid rgba(0, 0, 0, 0.152);
+    }
+
+    .ipAddress p,
+    .location p,
+    .timezone p,
+    .isp p {
+        color: var(--gray);
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .ipAddress .ipValue,
+    .location .locationValue,
+    .timezone .timezoneValue,
+    .isp .ispValue {
+        font-size: 18px;
+        color: var(--gray-dark);
+        text-transform: none;
+    }
+
+    /* Absolute div */
+
+    .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 1;
+    }
+
+    .leaflet-container {
+        height: 60vh;
+        position: relative;
+        z-index: 0;
+    }
+
+    .errorMsg {
+        color: #ff7a7a;
+        position: absolute;
+        top: 105%;
+        left: 1%;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .trackerContainer {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .headercontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/src/assets/pattern-bg-desktop.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 40vh;
+        padding: 32px 72px;
+        gap: 24px;
+
+    }
+
+    /* Title */
+    .title h1 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+    }
+
+    /* Input div */
+
+    .input {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 45px;
+    }
+
+    .input label {
+        width: 85%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .btn-header {
+        width: 15%;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .btn-header button {
+        width: 100%;
+        height: 100%;
+        padding: 15px 0;
+        border: 1px solid transparent;
+        border-radius: 0 10px 10px 0;
+        background-color: var(--gray-dark);
+    }
+
+    .btn-header button:hover {
+        cursor: pointer;
+        background-color: #373737;
+    }
+
+    .btn-header button img {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .input label input {
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+        border: 1px solid var(--gray-dark);
+        border-radius: 10px 0 0 10px;
+    }
+
+    #ip::placeholder {
+        font-size: 14px;
+        color: var(--gray);
+    }
+
+    /* Input div */
+
+    /* Absolute div */
+
+
+    .absoluteContainer {
+        position: absolute;
+        top: 150%;
+        background-color: #fff;
+        padding: 16px 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        border-radius: 10px;
+        z-index: 2;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.286);
+    }
+
+    .ipAddress,
+    .location,
+    .timezone,
+    .isp {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .ipAddress p,
+    .location p,
+    .timezone p,
+    .isp p {
+        color: var(--gray);
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .ipAddress .ipValue,
+    .location .locationValue,
+    .timezone .timezoneValue,
+    .isp .ispValue {
+        font-size: 16px;
+        color: var(--gray-dark);
+        text-transform: none;
+    }
+
+    /* Absolute div */
+
+    .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scale: 1;
+    }
+
+    .leaflet-container {
+        height: 60vh;
+        position: relative;
+        z-index: 0;
+    }
+
+    .errorMsg {
+        color: #ff7a7a;
+        position: absolute;
+        top: 105%;
+        left: 1%;
+        font-size: 12px;
+    }
+}

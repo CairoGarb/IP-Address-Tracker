@@ -3,7 +3,7 @@ import './Tracker.css'
 import LoadingIcons from 'react-loading-icons'
 import 'leaflet/dist/leaflet.css'
 import { Icon } from 'leaflet'
-import markerIconPng from '/Users/Cairo/ip-address-tracker/node_modules/leaflet/dist/images/marker-icon.png'
+import markerIconPng from '/node_modules/leaflet/dist/images/marker-icon.png'
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet'
 
 export function Tracker() {
